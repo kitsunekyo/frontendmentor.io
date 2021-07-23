@@ -8,22 +8,64 @@
     </head>
     <body>
         <header class="header">
-            <div class="brand">sunnyside</div>
-            <nav class="navigation">
+            <div class="header__brand">sunnyside</div>
+            <nav class="header__navigation">
                 <a href="#" class="navigation__link">About</a>
                 <a href="#" class="navigation__link">Services</a>
                 <a href="#" class="navigation__link">Projects</a>
                 <a href="#" class="navigation__link">Contact</a>
             </nav>
-            <div class="menu-toggle">
+            <div class="header__menu-toggle">
                 <span />
             </div>
         </header>
         <section class="hero">
-            <h1>We are creatives</h1>
+            <h1 class="hero__title">We are creatives</h1>
             <img src="images/icon-arrow-down.svg" alt="arrow down" />
-            <img src="images/mobile/image-header.jpg" alt="half of an orange" />
         </section>
+
+        <section class="md:grid-2-col">
+            <div class="col">
+                <img src="images/mobile/image-transform.jpg" alt="egg on yellow background" />
+            </div>
+            <div class="col content">
+                <h3>Transform your brand</h3>
+                <p>
+                    We are a full-service creative agency specializing in helping brands grow fast. Engage your clients
+                    through compelling visuals that do most of the marketing for you.
+                </p>
+                <a href="#" class="link link--yellow">Learn more</a>
+            </div>
+            <div class="col">
+                <img src="images/mobile/image-stand-out.jpg" alt="pink cup on pink background" />
+            </div>
+            <div class="col content">
+                <h3>Stand out to the right audience</h3>
+                <p>
+                    Using a collaborative formula of designers, researchers, photographers, videographers, and
+                    copywriters, we'll build and extend your brand in digital places.
+                </p>
+                <a href="#" class="link link--pink">Learn more</a>
+            </div>
+        </section>
+
+        <section class="md:grid-2-col">
+            <div class="content bg-image graphic-design">
+                <h3>Graphic Design</h3>
+                <p>
+                    Great design makes you memorable. We deliver artwork that underscores your brand message and
+                    captures potential clients' attention.
+                </p>
+            </div>
+            <div class="content bg-image photography">
+                <h3>Photography</h3>
+                <p>
+                    Increase your credibility by getting the most stunning, high-quality photos that improve your
+                    business image.
+                </p>
+            </div>
+        </section>
+
         <script type="module" src="/main.js"></script>
     </body>
 </html>
