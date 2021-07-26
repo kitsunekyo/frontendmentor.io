@@ -1,0 +1,36 @@
+.offer {
+    @media screen and (min-width: 769px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__graphic-design,
+    &__photography {
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 380px;
+
+        h3 {
+            opacity: 0.85;
+        }
+    }
+
+    &__graphic-design {
+        background-image: url("images/mobile/image-graphic-design.jpg");
+        color: hsl(167, 40%, 24%);
+
+        @media screen and (min-width: 769px) {
+            background-image: url("images/desktop/image-graphic-design.jpg");
+        }
+    }
+
+    &__photography {
+        background-image: url("images/mobile/image-photography.jpg");
+        color: hsl(198, 62%, 26%);
+
+        @media screen and (min-width: 769px) {
+            background-image: url("images/desktop/image-photography.jpg");
+        }
+    }
+}

@@ -9,26 +9,40 @@
     <body>
         <header class="header">
             <div class="header__brand">sunnyside</div>
-            <nav class="header__navigation">
-                <a href="#" class="navigation__link">About</a>
-                <a href="#" class="navigation__link">Services</a>
-                <a href="#" class="navigation__link">Projects</a>
-                <a href="#" class="navigation__link">Contact</a>
+            <nav class="header__nav sm:hide">
+                <a href="#" class="nav__item">About</a>
+                <a href="#" class="nav__item">Services</a>
+                <a href="#" class="nav__item">Projects</a>
+                <div class="nav__item">
+                    <a href="#" class="button">Contact</a>
+                </div>
             </nav>
-            <div class="header__menu-toggle">
+            <label class="header__menu-toggle md:hide" for="showMenu">
                 <span />
-            </div>
+            </label>
+            <input type="checkbox" class="showMenu" name="showMenu" id="showMenu" />
+            <nav class="header__mobile-nav md:hide">
+                <div class="mobile-nav">
+                    <a href="#" class="mobile-nav__item">About</a>
+                    <a href="#" class="mobile-nav__item">Services</a>
+                    <a href="#" class="mobile-nav__item">Projects</a>
+                    <div class="mobile-nav__item">
+                        <a href="#" class="mobile-nav__button">Contact</a>
+                    </div>
+                </div>
+            </nav>
         </header>
         <section class="hero">
             <h1 class="hero__title">We are creatives</h1>
             <img src="images/icon-arrow-down.svg" alt="arrow down" />
         </section>
 
-        <section class="md:grid-2-col">
-            <div class="col">
-                <img src="images/mobile/image-transform.jpg" alt="egg on yellow background" />
+        <section class="usp">
+            <div class="usp__image">
+                <img src="images/mobile/image-transform.jpg" alt="egg on yellow background" class="md:hide" />
+                <img src="images/desktop/image-transform.jpg" alt="egg on yellow background" class="sm:hide" />
             </div>
-            <div class="col content">
+            <div class="content">
                 <h3>Transform your brand</h3>
                 <p>
                     We are a full-service creative agency specializing in helping brands grow fast. Engage your clients
@@ -36,10 +50,11 @@
                 </p>
                 <a href="#" class="link link--yellow">Learn more</a>
             </div>
-            <div class="col">
-                <img src="images/mobile/image-stand-out.jpg" alt="pink cup on pink background" />
+            <div class="usp__image">
+                <img src="images/mobile/image-stand-out.jpg" alt="pink cup on pink background" class="md:hide" />
+                <img src="images/desktop/image-stand-out.jpg" alt="pink cup on pink background" class="sm:hide" />
             </div>
-            <div class="col content">
+            <div class="content">
                 <h3>Stand out to the right audience</h3>
                 <p>
                     Using a collaborative formula of designers, researchers, photographers, videographers, and
@@ -49,15 +64,15 @@
             </div>
         </section>
 
-        <section class="md:grid-2-col">
-            <div class="content bg-image graphic-design">
+        <section class="offer">
+            <div class="content offer__graphic-design">
                 <h3>Graphic Design</h3>
                 <p>
                     Great design makes you memorable. We deliver artwork that underscores your brand message and
                     captures potential clients' attention.
                 </p>
             </div>
-            <div class="content bg-image photography">
+            <div class="content offer__photography">
                 <h3>Photography</h3>
                 <p>
                     Increase your credibility by getting the most stunning, high-quality photos that improve your
@@ -65,6 +80,74 @@
                 </p>
             </div>
         </section>
+
+        <section class="testimonial__section">
+            <h3 class="section__title">Client Testimonials</h3>
+            <div class="testimonial__list">
+                <div class="testimonial content">
+                    <img class="testimonial__image" src="images/image-emily.jpg" alt="emily profile picture" />
+                    <p class="testimonial__text">
+                        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
+                        were always hit.
+                    </p>
+                    <div class="testimonial__meta">
+                        <h4 class="testimonial__name">Emily R.</h4>
+                        <span class="testimonial__position">Marketing Director</span>
+                    </div>
+                </div>
+                <div class="testimonial content">
+                    <img class="testimonial__image" src="images/image-thomas.jpg" alt="emily profile picture" />
+                    <p class="testimonial__text">
+                        Sunnyside's enthusiasm coupled with their keen intereset in our brand's success made it a
+                        satisfying and enjoyable experience.
+                    </p>
+                    <div class="testimonial__meta">
+                        <h4 class="testimonial__name">Thomas S.</h4>
+                        <span class="testimonial__position">Chief Operating Officer</span>
+                    </div>
+                </div>
+                <div class="testimonial content">
+                    <img class="testimonial__image" src="images/image-jennie.jpg" alt="emily profile picture" />
+                    <p class="testimonial__text">
+                        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+                        recommended!
+                    </p>
+                    <div class="testimonial__meta">
+                        <h4 class="testimonial__name">Jennie F.</h4>
+                        <span class="testimonial__position">Business Owner</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <img src="images/mobile/image-gallery-milkbottles.jpg" alt="milkbottles" class="md:hide" />
+            <img src="images/mobile/image-gallery-orange.jpg" alt="orange" class="md:hide" />
+            <img src="images/mobile/image-gallery-cone.jpg" alt="cone" class="md:hide" />
+            <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="md:hide" />
+
+            <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milkbottles" class="sm:hide" />
+            <img src="images/desktop/image-gallery-orange.jpg" alt="orange" class="sm:hide" />
+            <img src="images/desktop/image-gallery-cone.jpg" alt="cone" class="sm:hide" />
+            <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes" class="sm:hide" />
+        </section>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <h3 class="footer__title">sunnyside</h3>
+                <nav class="footer__links">
+                    <a href="#" class="footer__link">About</a>
+                    <a href="#" class="footer__link">Services</a>
+                    <a href="#" class="footer__link">Projects</a>
+                </nav>
+                <nav class="footer__social-links">
+                    <a href="#" class="footer__social-link"><img src="images/icon-facebook.svg" alt="facebook" /></a>
+                    <a href="#" class="footer__social-link"><img src="images/icon-instagram.svg" alt="instagram" /></a>
+                    <a href="#" class="footer__social-link"><img src="images/icon-twitter.svg" alt="twitter" /></a>
+                    <a href="#" class="footer__social-link"><img src="images/icon-pinterest.svg" alt="pinterest" /></a>
+                </nav>
+            </div>
+        </footer>
 
         <script type="module" src="/main.js"></script>
     </body>

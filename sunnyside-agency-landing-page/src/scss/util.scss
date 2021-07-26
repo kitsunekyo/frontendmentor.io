@@ -1,0 +1,90 @@
+// elements
+.content {
+    color: hsl(232, 10%, 45%);
+    padding: 4rem 1.5rem;
+    text-align: center;
+
+    @media screen and (min-width: 769px) {
+        padding: 3rem 1.5rem;
+    }
+
+    h3 {
+        color: hsl(212, 27%, 19%);
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 2em 0;
+    }
+}
+
+.link {
+    color: hsl(212, 27%, 19%);
+    display: inline-block;
+    font-family: Fraunces;
+    font-size: 1rem;
+    font-weight: 900;
+    position: relative;
+    text-transform: uppercase;
+
+    &--yellow::after,
+    &--pink::after {
+        border-radius: 5px;
+        content: "";
+        display: block;
+        height: 10px;
+        left: 50%;
+        opacity: 0.3;
+        position: relative;
+        transform: translate(-50%, -70%);
+        transition: opacity 0.1s ease-out;
+        width: 110%;
+        z-index: -1;
+    }
+    &--yellow::after {
+        background-color: hsl(51, 100%, 49%);
+    }
+    &--pink::after {
+        background-color: hsl(7, 99%, 70%);
+    }
+
+    &:hover {
+        &.link--yellow::after,
+        &.link--pink::after {
+            opacity: 1;
+        }
+    }
+}
+
+.button {
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    color: black;
+    display: inline-flex;
+    font-family: Fraunces;
+    font-size: 1rem;
+    height: 60px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: hsl(199, 97%, 71%);
+        color: hsl(0, 0%, 100%);
+    }
+}
+
+// layout
+
+.sm\:hide {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.md\:hide {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}

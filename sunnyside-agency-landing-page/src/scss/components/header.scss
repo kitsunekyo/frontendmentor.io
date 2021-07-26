@@ -1,0 +1,111 @@
+:root {
+    --header-size: 6rem;
+}
+
+.header {
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    height: var(--header-size);
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    @media (min-width: 769px) {
+        position: absolute;
+    }
+
+    &__brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &__nav {
+        align-items: center;
+        display: flex;
+        gap: 3rem;
+        margin-left: auto;
+    }
+
+    &__mobile-nav {
+        display: none;
+        left: 0;
+        padding: 1.5rem;
+        position: absolute;
+        top: var(--header-size);
+        width: 100%;
+    }
+
+    &__menu-toggle {
+        cursor: pointer;
+        margin-left: auto;
+        position: relative;
+
+        span,
+        span::before,
+        span::after {
+            background: hsl(0, 0%, 100%);
+            content: "";
+            display: block;
+            height: 2px;
+            position: absolute;
+            width: 25px;
+        }
+        span {
+            position: relative;
+        }
+        span::before {
+            transform: translateY(-8px);
+        }
+        span::after {
+            transform: translateY(8px);
+        }
+    }
+}
+
+.showMenu {
+    display: none;
+}
+
+.showMenu:checked ~ .header__mobile-nav {
+    display: block;
+}
+
+.mobile-nav {
+    background-color: hsl(0, 0%, 100%);
+    color: gray;
+    display: flex;
+    flex-flow: column;
+    font-size: 1.25rem;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+
+    &::before {
+        border-bottom: 1.5rem solid hsl(0, 0%, 100%);
+        border-left: 1.5rem solid transparent;
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -20px;
+    }
+
+    &__item,
+    &__button {
+        padding: 1rem 0;
+    }
+
+    &__button {
+        background-color: hsl(51, 100%, 49%);
+        border-radius: 2rem;
+        color: black;
+        display: inline-block;
+        font-family: Fraunces;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+    }
+}

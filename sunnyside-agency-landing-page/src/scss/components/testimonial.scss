@@ -1,0 +1,31 @@
+.testimonial {
+    padding-bottom: 0;
+    text-align: center;
+
+    &__list {
+        @media screen and (min-width: 769px) {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__section {
+        padding-bottom: 6rem;
+        padding-top: 4rem;
+    }
+
+    &__image {
+        border-radius: 50%;
+        margin: 0 auto;
+        object-fit: cover;
+        width: 75px;
+    }
+
+    &__position {
+        display: inline-block;
+        font-size: 0.8rem;
+        margin-top: 0.75rem;
+        opacity: 0.3;
+    }
+}

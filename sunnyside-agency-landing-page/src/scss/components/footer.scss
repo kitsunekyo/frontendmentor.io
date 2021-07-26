@@ -1,0 +1,45 @@
+.footer {
+    background-color: hsl(167, 44%, 70%);
+    color: hsl(168, 34%, 41%);
+    display: grid;
+    padding: 4rem 2rem;
+    place-items: center;
+
+    &__title {
+        color: hsl(168, 34%, 30%);
+        font-family: Barlow;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    &__content {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    &__links {
+        align-items: center;
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
+
+    &__social-links {
+        align-items: center;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 170px;
+        padding: 4rem 0 3rem;
+    }
+
+    &__link,
+    &__social-link {
+        &:hover {
+            color: hsl(0, 0%, 100%);
+        }
+    }
+}

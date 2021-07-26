@@ -1,0 +1,18 @@
+.usp {
+    @media screen and (min-width: 769px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .content {
+            text-align: left;
+        }
+        &__image:first-child {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .content:first-child {
+            grid-column: 0;
+            grid-row: 1;
+        }
+    }
+}
