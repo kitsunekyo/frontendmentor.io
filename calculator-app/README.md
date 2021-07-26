@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [https://github.com/kitsunekyo/calculator-app](https://github.com/kitsunekyo/calculator-app)
+-   Solution URL: [https://github.com/kitsunekyo/frontendmentor.io](https://github.com/kitsunekyo/frontendmentor.io)
 -   Live Site URL: [https://gallant-williams-2db4cc.netlify.app/](https://gallant-williams-2db4cc.netlify.app/)
 
 ## My process

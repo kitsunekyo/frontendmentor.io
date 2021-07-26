@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [https://github.com/kitsunekyo/frontendmentor.io/tree/main/sunnyside-agency-landing-page](https://github.com/kitsunekyo/frontendmentor.io/tree/main/sunnyside-agency-landing-page)
+-   Solution URL: [https://github.com/kitsunekyo/frontendmentor.io](https://github.com/kitsunekyo/frontendmentor.io)
 -   Live Site URL: [https://competent-bassi-6c13b8.netlify.app/](https://competent-bassi-6c13b8.netlify.app/)
 
 ## My process

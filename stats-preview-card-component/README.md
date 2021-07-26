@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [https://github.com/kitsunekyo/stats-preview-card-component](https://github.com/kitsunekyo/stats-preview-card-component)
+-   Solution URL: [https://github.com/kitsunekyo/frontendmentor.io](https://github.com/kitsunekyo/frontendmentor.io)
 -   Live Site URL: [https://suspicious-khorana-e2e565.netlify.app](https://suspicious-khorana-e2e565.netlify.app)
 
 ## My process

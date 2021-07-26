@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [https://github.com/kitsunekyo/tip-calculator-app](https://github.com/kitsunekyo/tip-calculator-app)
+-   Solution URL: [https://github.com/kitsunekyo/frontendmentor.io](https://github.com/kitsunekyo/frontendmentor.io)
 -   Live Site URL: [https://mystifying-montalcini-aed724.netlify.app/](https://mystifying-montalcini-aed724.netlify.app/)
 
 ## My process
