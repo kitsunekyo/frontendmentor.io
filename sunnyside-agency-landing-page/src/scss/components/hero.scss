@@ -1,6 +1,6 @@
 .hero {
     background-color: hsl(200, 100%, 62%);
-    background-image: url("images/mobile/image-header.jpg");
+    background-image: url("/images/mobile/image-header.jpg");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,7 @@
     text-transform: uppercase;
 
     @media (min-width: 769px) {
-        background-image: url("images/desktop/image-header.jpg");
+        background-image: url("/images/desktop/image-header.jpg");
     }
 
     &__title {
