@@ -64,3 +64,9 @@ when already working with scss, i really like the idea to abstract away breakpoi
 **proper scss imports**
 
 for ages, the recommended way of importing scss modules is via `@use`. NOT `@import` (import is discouraged actually. read more [here](https://sass-lang.com/documentation/at-rules/import))
+
+**logo**
+
+the logo was sent as svg file. but in order to use it in the footer I had to do some modifications. the viewbox attribute was missing, and without it scaling would be annoying. I opted to set the viewbox to the initial svg size, so the path scales properly with any css size set.
+
+i also removed the `fill` attribute, so I could set it easily via css.
