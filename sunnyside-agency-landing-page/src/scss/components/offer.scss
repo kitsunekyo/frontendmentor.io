@@ -10,10 +10,14 @@
     &__photography {
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         display: flex;
         justify-content: center;
         padding-top: 380px;
+
+        @include mq-l {
+            background-size: contain;
+        }
 
         h3 {
             opacity: 0.85;
