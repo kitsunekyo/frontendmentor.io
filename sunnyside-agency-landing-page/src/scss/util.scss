@@ -79,12 +79,12 @@
 
 .sm\:hide {
     @media (max-width: 768px) {
-        display: none;
+        display: none !important;
     }
 }
 
 .md\:hide {
     @media (min-width: 769px) {
-        display: none;
+        display: none !important;
     }
 }
