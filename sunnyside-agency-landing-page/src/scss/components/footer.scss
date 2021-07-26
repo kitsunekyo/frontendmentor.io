@@ -5,11 +5,16 @@
     padding: 3rem 2rem;
     place-items: center;
 
-    &__title {
-        color: var(--green-500);
-        font-family: Barlow;
-        font-weight: 900;
+    &__logo {
+        display: block;
+        height: auto;
+        margin: 0 auto;
         text-align: center;
+        width: 170px;
+
+        path {
+            fill: var(--green-500);
+        }
     }
 
     &__content {
