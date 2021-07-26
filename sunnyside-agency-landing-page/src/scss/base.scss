@@ -1,5 +1,31 @@
+@use 'mixins' as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
+:root {
+    // colors
+    --text: hsl(212, 27%, 19%);
+    --text-secondary: hsl(212, 27%, 45%);
+    --text-tertiary: hsl(212, 27%, 70%);
+    --green-300: hsl(167, 44%, 70%);
+    --green-500: hsl(168, 34%, 41%);
+    --blue-300: hsl(199, 100%, 69%);
+    --blue-400: hsl(200, 100%, 62%);
+    --blue-500: hsl(198, 62%, 26%);
+    --pink-300: hsl(7, 100%, 90%);
+    --pink-500: hsl(7, 100%, 70%);
+    --yellow-300: hsl(49, 100%, 85%);
+    --yellow-500: hsl(49, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+
+    // sizes
+    --space: 1.5rem;
+
+    @include mq-md {
+        --space: 3rem;
+    }
+}
 
 *,
 *::before,
@@ -18,6 +44,10 @@ body {
     padding: 0;
 }
 
+p {
+    line-height: 1.6;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -28,6 +58,7 @@ img {
     height: auto;
     line-height: 0;
     max-width: 100%;
+    width: 100%;
 }
 
 h1,

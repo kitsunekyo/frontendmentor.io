@@ -1,18 +1,36 @@
-.usp {
-    @media screen and (min-width: 769px) {
+@use '../mixins' as *;
+
+@include mq-md {
+    .usp {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
         .content {
+            max-width: 500px;
             text-align: left;
         }
+
+        .content:first-child {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
         &__image:first-child {
             grid-column: 2;
             grid-row: 1;
         }
-        .content:first-child {
-            grid-column: 0;
-            grid-row: 1;
+
+        .col {
+            align-items: center;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        &__image img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
         }
     }
 }

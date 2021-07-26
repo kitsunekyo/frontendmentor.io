@@ -1,5 +1,7 @@
+@use '../mixins' as *;
+
 .offer {
-    @media screen and (min-width: 769px) {
+    @include mq-md {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -8,29 +10,45 @@
     &__photography {
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
         padding-top: 380px;
 
         h3 {
             opacity: 0.85;
         }
+
+        .content {
+            max-width: 350px;
+        }
     }
 
     &__graphic-design {
+        background-color: var(--green-300);
         background-image: url("/images/mobile/image-graphic-design.jpg");
-        color: hsl(167, 40%, 24%);
+        .content {
+            color: var(--green-500);
+        }
 
-        @media screen and (min-width: 769px) {
+        /* stylelint-disable order/order */
+        @include mq-md {
             background-image: url("/images/desktop/image-graphic-design.jpg");
         }
+        /* stylelint-enable order/order */
     }
 
     &__photography {
+        background-color: var(--blue-300);
         background-image: url("/images/mobile/image-photography.jpg");
-        color: hsl(198, 62%, 26%);
+        .content {
+            color: var(--blue-500);
+        }
 
-        @media screen and (min-width: 769px) {
+        /* stylelint-disable order/order */
+        @include mq-md {
             background-image: url("/images/desktop/image-photography.jpg");
         }
+        /* stylelint-enable order/order */
     }
 }

@@ -1,12 +1,12 @@
 .footer {
-    background-color: hsl(167, 44%, 70%);
-    color: hsl(168, 34%, 41%);
+    background-color: var(--green-300);
+    color: var(--green-500);
     display: grid;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     place-items: center;
 
     &__title {
-        color: hsl(168, 34%, 30%);
+        color: var(--green-500);
         font-family: Barlow;
         font-weight: 900;
         text-align: center;
@@ -23,7 +23,7 @@
         gap: 3rem;
         justify-content: center;
         margin: 0 auto;
-        padding: 3rem 0;
+        padding: 2rem 0;
     }
 
     &__social-links {
@@ -33,13 +33,13 @@
         justify-content: center;
         margin: 0 auto;
         max-width: 170px;
-        padding: 4rem 0 3rem;
+        padding: 3rem 0;
     }
 
     &__link,
     &__social-link {
         &:hover {
-            color: hsl(0, 0%, 100%);
+            color: var(--white);
         }
     }
 }

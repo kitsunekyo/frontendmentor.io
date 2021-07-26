@@ -1,18 +1,21 @@
+@use '../mixins' as *;
+
 :root {
     --header-size: 6rem;
 }
 
 .header {
     align-items: center;
-    color: hsl(0, 0%, 100%);
+    background-color: var(--blue-400);
+    color: var(--white);
     display: flex;
     height: var(--header-size);
-    padding: 1.5rem;
+    padding: var(--space);
     position: fixed;
     width: 100%;
     z-index: 100;
 
-    @media (min-width: 769px) {
+    @include mq-md {
         position: absolute;
     }
 
@@ -31,7 +34,7 @@
     &__mobile-nav {
         display: none;
         left: 0;
-        padding: 1.5rem;
+        padding: var(--space);
         position: absolute;
         top: var(--header-size);
         width: 100%;
@@ -45,7 +48,7 @@
         span,
         span::before,
         span::after {
-            background: hsl(0, 0%, 100%);
+            background: var(--white);
             content: "";
             display: block;
             height: 2px;
@@ -73,8 +76,8 @@
 }
 
 .mobile-nav {
-    background-color: hsl(0, 0%, 100%);
-    color: gray;
+    background-color: var(--white);
+    color: var(--text-secondary);
     display: flex;
     flex-flow: column;
     font-size: 1.25rem;
@@ -85,7 +88,7 @@
     z-index: 1000;
 
     &::before {
-        border-bottom: 1.5rem solid hsl(0, 0%, 100%);
+        border-bottom: 1.5rem solid var(--white);
         border-left: 1.5rem solid transparent;
         content: "";
         position: absolute;
@@ -99,9 +102,9 @@
     }
 
     &__button {
-        background-color: hsl(51, 100%, 49%);
+        background-color: var(--yellow-500);
         border-radius: 2rem;
-        color: black;
+        color: var(--text);
         display: inline-block;
         font-family: Fraunces;
         font-size: 1rem;

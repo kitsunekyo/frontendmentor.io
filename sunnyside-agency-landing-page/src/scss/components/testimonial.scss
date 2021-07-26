@@ -1,18 +1,50 @@
+@use '../mixins' as *;
+
 .testimonial {
+    margin-top: 4rem;
     padding-bottom: 0;
     text-align: center;
 
     &__list {
-        @media screen and (min-width: 769px) {
+        @include mq-md {
             align-items: center;
             display: flex;
+            gap: 2rem;
             justify-content: center;
+            margin: 0 auto;
+            max-width: 1100px;
+        }
+    }
+
+    &__title {
+        font-size: 1rem;
+        letter-spacing: 3px;
+        opacity: 0.5;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include mq-md {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
         }
     }
 
     &__section {
         padding-bottom: 6rem;
+        padding-left: var(--space);
+        padding-right: var(--space);
         padding-top: 4rem;
+
+        @include mq-md {
+            padding-bottom: 10rem;
+            padding-top: 10rem;
+        }
+    }
+
+    &__meta {
+        @include mq-md {
+            margin-top: 4rem;
+        }
     }
 
     &__image {
@@ -23,9 +55,13 @@
     }
 
     &__position {
+        color: var(--text-tertiary);
         display: inline-block;
         font-size: 0.8rem;
         margin-top: 0.75rem;
-        opacity: 0.3;
+    }
+
+    &__text {
+        color: var(--text-secondary);
     }
 }

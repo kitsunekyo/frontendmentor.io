@@ -1,28 +1,42 @@
+@use '../mixins' as *;
+
 .hero {
-    background-color: hsl(200, 100%, 62%);
+    background-color: var(--blue-400);
     background-image: url("/images/mobile/image-header.jpg");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    color: hsl(0, 0%, 100%);
+    color: var(--white);
     font-size: 1.5rem;
     padding-bottom: 8rem;
+    padding-left: var(--space);
+    padding-right: var(--space);
     padding-top: var(--header-size);
     position: relative;
     text-align: center;
     text-transform: uppercase;
 
-    @media (min-width: 769px) {
+    @include mq-md {
         background-image: url("/images/desktop/image-header.jpg");
+        min-height: 800px;
+    }
+    @include mq-l {
+        background-size: contain;
     }
 
     &__title {
         letter-spacing: 0.5rem;
         margin-bottom: 3rem;
         margin-top: 5rem;
+
+        @include mq-md {
+            font-size: 4rem;
+            margin-bottom: 7rem;
+        }
     }
 
     img {
         margin: 0 auto;
+        width: auto;
     }
 }
